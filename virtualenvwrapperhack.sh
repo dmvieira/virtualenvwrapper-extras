@@ -23,12 +23,12 @@ function _hackon {
     local digit;
     COMPREPLY=();
     digit=${COMP_WORDS[COMP_CWORD]};
-    COMPREPLY=($(compgen -W "$(basename $(compgen -d $WORKSPACE/))" -- $digit))
+    COMPREPLY=($(compgen -W "$(basename $(compgen -d $WORKSPACE/))" -- $digit));
     return 0
 }
 complete -F _hackon -o dirnames hackon;
 
 function mkhack {
     mkvirtualenv $1;
-    to_dir $1 $2;
+    hackon $1 $2;
 }
