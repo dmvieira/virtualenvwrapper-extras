@@ -1,7 +1,9 @@
-Install
-=======
+# VirtualEnvWrapper-extras
 
-After install pip, installs virtualenv and virtualenvwrapper following this:
+## Install
+
+
+After install pip, install virtualenv, virtualenvwrapper and extras automatically following this:
 
 ```
   sudo pip install git+https://github.com/dmvieira/virtualenvwrapper-extras.git
@@ -20,21 +22,24 @@ Edit /usr/local/bin/virtualenvwrapperhack.sh and change defaults:
   export WORKSPACE="$HOME/workspace"; # your projects dir
 ```
 
-Usage
-=====
+## Usage
 
-There are two actions:
+There are two possible actions: **make** and **use** virtualenv
+
+### Make new VirtualEnv and work on it
 
 ```
-  mkhack your_env (mandatory) folder_to_go (opional)
+  mkhack your_env (mandatory) folder_to_go (optional)
 ```
 
 where you create a new virtualenv and a folder with its name in your workspace dir. Then, it activates virtualenv and go to folder.
 
 If folder_to_go is defined, then it creates folder_to_go folder inside your workspace, activates virtualenv and go to folder.
 
+### Use VirtualEnv
+
 ```
-  hackon your_env (mandatory) folder_to_go (opional)
+  hackon your_env (mandatory) folder_to_go (optional)
 ```
 
 where you can activate your virtualenv and change to your_env folder or folder_to_go.
