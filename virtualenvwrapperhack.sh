@@ -16,8 +16,8 @@ function to_dir {
 
 function hackon {
 
-    workon $1;
     to_dir $1 $2;
+    workon $1;
 }
 
 function _hackon {
