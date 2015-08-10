@@ -3,7 +3,7 @@
 from setuptools import find_packages, setup
 
 setup(name='virtualenvwrapperhack',
-      version='0.1.1',
+      version='0.1.2',
       description='Python virtualenvwrapper hacks',
       long_description = open('README.md', 'rt').read(),
       author='Diogo Munaro Vieira',
