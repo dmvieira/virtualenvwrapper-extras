@@ -5,10 +5,10 @@ source /usr/local/bin/virtualenvwrapper.sh;
 
 function to_dir {
     if [ "$2" != "" ]; then
-        mkdir -p $2;
+        mkdir -p "$WORKSPACE/$2";
         cd "$WORKSPACE/$2";
     else
-        mkdir -p $1;
+        mkdir -p "$WORKSPACE/$1";
         cd "$WORKSPACE/$1";
     fi
 
