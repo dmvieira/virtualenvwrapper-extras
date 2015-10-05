@@ -8,11 +8,20 @@ After install pip, install virtualenv, virtualenvwrapper and extras automaticall
 ```
   sudo pip install git+https://github.com/dmvieira/virtualenvwrapper-extras.git
 ```
+or for local install
 
+```
+  pip install --user git+https://github.com/dmvieira/virtualenvwrapper-extras.git
+```
 Edit ~/.bashrc or ~/.bash_profile file and include this line:
 
 ```
   source /usr/local/bin/virtualenvwrapperhack.sh
+```
+or for local install
+
+```
+  source $HOME/.local/bin/virtualenvwrapperhack.sh
 ```
 
 Edit /usr/local/bin/virtualenvwrapperhack.sh and change defaults:

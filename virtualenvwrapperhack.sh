@@ -1,7 +1,8 @@
 #!/bin/bash
 export WORKON_HOME=$HOME/.virtualenvs;
 export WORKSPACE="$HOME/workspace";
-source /usr/local/bin/virtualenvwrapper.sh;
+BASEDIR=$(dirname $BASH_SOURCE)
+source $BASEDIR/virtualenvwrapper.sh;
 
 function to_dir {
     if [ "$2" != "" ]; then
